@@ -7,7 +7,7 @@ let express = require('express');
 
 let app = express();
 
-app.use(express.static('public')) 
+app.use(express.static('controller')) 
 
 let mongoClient = MongoClient.MongoClient;
 
@@ -26,7 +26,6 @@ let path = require("path");
  *  YOU WILL GET SERIOUS HEADACHE! :p
 
  */
-
 
 
 mongoClient.connect(
@@ -64,7 +63,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 
-app.get( '/',(req,res)=> { res.sendFile( path.join(__dirname+'/index.html' )) ; } ) ; 
+app.get( '/',(req,res)=> { res.sendFile( path.join(__dirname+'/view/index.html' )) ; } ) ; 
 
 
 app.get('/names', (req, res) => {

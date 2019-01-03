@@ -1,0 +1,58 @@
+.person{
+  width: 30%;
+  border-style: hidden;
+
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#info_list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person{
+  border-style: hidden;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  min-width: 48px;
+  min-height: 48px;
+  margin: 5px 5px 0px 5px;
+}
+
+.inputField{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+https://medium.freecodecamp.org/how-to-center-things-with-style-in-css-dc87b7542689
+*/
+
+.formElements, ._buttons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //flex-wrap: wrap;
+}
+
+.form_buttons{
+  display: flex;
+  width: 200px;
+}
+
+#cancel{
+  width: 50%;
+}
+
+#done{
+  width: 50%;
+}
