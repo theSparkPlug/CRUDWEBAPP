@@ -1,6 +1,5 @@
 
 
-let bodyParser = require('body-parser');
 
 //let MongoClient = require('mongodb');
 
@@ -9,9 +8,14 @@ let express = require('express');
 
 let app = express();
 
+//let bodyParser = require('body-parser');
+
+
 app.set('port', (process.env.PORT || 5000))
 
+
 app.use(express.static(__dirname+'/controller')) 
+
 
 //let mongoClient = MongoClient.MongoClient;
 
@@ -19,7 +23,7 @@ app.use(express.static(__dirname+'/controller'))
 
 //let dbUrl ='mongodb://localhost:27017';
 
-let namesDb = null;
+//let namesDb = null;
 
 let path = require("path");
 
@@ -72,7 +76,9 @@ let path = require("path");
 
 // //path.join(__dirname+'/view/index.html')
 
-// app.get( '/',(req,res)=> { res.send( "hello" ) ; } ) ; 
+
+ 
+app.get( '/',(req,res)=> { res.send( "hello" ) ; } ) ; 
 
 
 // app.get('/names', (req, res) => {
