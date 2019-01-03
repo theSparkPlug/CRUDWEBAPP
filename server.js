@@ -64,8 +64,9 @@ app.use(bodyParser.urlencoded({
 
 }));
 
+//path.join(__dirname+'/view/index.html')
 
-app.get( '/',(req,res)=> { res.sendFile( path.join(__dirname+'/view/index.html' )) ; } ) ; 
+app.get( '/',(req,res)=> { res.sendFile( "hello" ) ; } ) ; 
 
 
 app.get('/names', (req, res) => {
@@ -121,7 +122,7 @@ app.delete('/names', (req, res) => {
 
 });
 
-var port1 = process.env.PORT || 8000
+var port1 = process.env.PORT || 5000
 
 let server = app.listen(port1, () => {
 
