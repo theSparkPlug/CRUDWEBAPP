@@ -70,7 +70,7 @@ app.use(bodyParser.urlencoded({
 
 //path.join(__dirname+'/view/index.html')
 
-app.get( '/',(req,res)=> { res.sendFile( "hello" ) ; } ) ; 
+app.get( '/',(req,res)=> { res.send( "hello" ) ; } ) ; 
 
 
 app.get('/names', (req, res) => {
