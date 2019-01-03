@@ -11,7 +11,7 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000))
 
-app.use(express.static(__dirname+'/public')) 
+app.use(express.static(__dirname+'/controller')) 
 
 var dbUrl = 'mongodb://noob:qwerty12@ds237858.mlab.com:37858/aws_db'
 
