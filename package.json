@@ -1,28 +1,27 @@
 {
-    "name": "node-js-sample",
-    "version": "0.2.0",
-    "description": "A sample Node.js app using Express 4",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "express": "^4.16.4"
-    },
-    "engines": {
-      "node": "10.15.0"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/theSparkPlug/CRUDWEBAPP"
-    },
-    "keywords": [
-      "node",
-      "heroku",
-      "express"
-    ],
-    "author": "Praduman Kumar",
-    "contributors": [
-    "pradk531@gmail.com" ] ,
-    "license": "MT"
-  }
+  "name": "default",
+  "version": "1.0.0",
+  "description": "^c",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theSparkPlug/CRUDWEBAPP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theSparkPlug/CRUDWEBAPP/issues"
+  },
+  "homepage": "https://github.com/theSparkPlug/CRUDWEBAPP#readme"
+}

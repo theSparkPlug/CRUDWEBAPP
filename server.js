@@ -11,14 +11,16 @@ app.use(express.static('controller'))
 
 let mongoClient = MongoClient.MongoClient;
 
-let dbUrl ='mongodb://<pk159>:<popiuy09>@ds237858.mlab.com:37858/aws_db';
+let dbUrl = 'mongodb://noob:qwerty12@ds237858.mlab.com:37858/aws_db'
+
+//let dbUrl ='mongodb://localhost:27017';
 
 let namesDb = null;
 
 let path = require("path");
 
 /*
-
+   mongodb://<pk159>:<pop***iuy09>@ds237858.mlab.com:37858/aws_db
  *  STRICT WARNING!!!
 
  *  PLEASE DON'T SEE THE CODE.
