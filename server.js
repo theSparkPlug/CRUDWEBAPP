@@ -7,7 +7,9 @@ let express = require('express');
 
 let app = express();
 
-app.use(express.static('controller')) 
+app.set('port', (process.env.PORT || 5000))
+
+app.use(express.static(__dirname+'/controller')) 
 
 let mongoClient = MongoClient.MongoClient;
 
@@ -18,6 +20,8 @@ let dbUrl = 'mongodb://noob:qwerty12@ds237858.mlab.com:37858/aws_db'
 let namesDb = null;
 
 let path = require("path");
+
+
 
 /*
    mongodb://<pk159>:<pop***iuy09>@ds237858.mlab.com:37858/aws_db
@@ -122,9 +126,8 @@ app.delete('/names', (req, res) => {
 
 });
 
-var port1 = process.env.PORT || 5000
 
-let server = app.listen(port1, () => {
+let server = app.listen(port, () => {
 
   let host = server.address().address;
 
