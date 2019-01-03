@@ -127,7 +127,7 @@ app.delete('/names', (req, res) => {
 });
 
 
-let server = app.listen(port, () => {
+let server = app.listen(app.get('port'), () => {
 
   let host = server.address().address;
 
