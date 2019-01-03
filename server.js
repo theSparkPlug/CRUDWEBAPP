@@ -42,7 +42,7 @@ mongoClient.connect(
 
     console.log('Database created!');
 
-    namesDb = db.db('namesDB');
+    namesDb = db.db('aws_db');
 
     namesDb.createCollection('names', (err, res) => {
 
