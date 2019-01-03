@@ -4,7 +4,7 @@ var val = document.getElementById('values')
 var todos = document.querySelector('.todos')
 var body = document.getElementsByTagName("body")
 
-var apiUrl = 'http://localhost:8000/names'
+var apiUrl = 'names'
 
 
 addEventListener('DOMContentLoaded', get_data, false)

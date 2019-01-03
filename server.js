@@ -11,7 +11,7 @@ app.use(express.static('controller'))
 
 let mongoClient = MongoClient.MongoClient;
 
-let dbUrl = 'mongodb://localhost:27017/';
+let dbUrl ='mongodb://<pk159>:<popiuy09>@ds237858.mlab.com:37858/aws_db';
 
 let namesDb = null;
 
