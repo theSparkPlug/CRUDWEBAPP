@@ -69,7 +69,7 @@ function create(event){
       console.log(lt.getElementsByTagName("b")[0].innerText )
 
 
-       fetch( `${apiUrl}?text=${lt.getElementsByTagName("b")[0].innerText}`, {
+       fetch( `${apiUrl}?text=${lt.getElementsByTagName("b")[0].innerText}&values=${lt.getElementsByTagName("b")[1].innerText}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -91,7 +91,7 @@ function create(event){
    {  
       let lt=node.parentElement
      
-      fetch(`${apiUrl}?text=${lt.getElementsByTagName("b")[0].innerText}`, {
+      fetch(`${apiUrl}?text=${lt.getElementsByTagName("b")[0].innerText}&values=${lt.getElementsByTagName("b")[1].innerText}`, {
        method: 'delete',
        headers: {
         'Content-Type': 'application/json'
@@ -123,7 +123,7 @@ function create(event){
     var int =5;
     var inht ='<input type="button" class="bt1" value="E" onclick="update_data(this)" >'
     var inht1 ='<input type="button" class="bt2" value="X" onclick="delete_data(this)"  > '       
-    l.innerHTML ='<span id="list_div">' + '<b>'+element.text+'</b>'+ ":" + element.values + inht + inht1 +'</span>'
+    l.innerHTML ='<span id="list_div">' + '<b>'+element.text+'</b>'+ ':' + '<b>'+ element.values+'</b>'+ inht + inht1 +'</span>'
     todos.appendChild(l)
 
       //Array.from(l.getElementsByClassName('bt1') ).map( v=>{ 
