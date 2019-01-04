@@ -78,7 +78,8 @@ function create(event){
           'text':lt.getElementsByTagName<'b'>[0].innerText  
         })
       }).then(function (response) {
-        window.location.reload()
+             
+         location.reload()
     })
     console.log("data delted successfully")
     }
@@ -126,18 +127,6 @@ function create(event){
     l.innerHTML ='<span id="list_div">' + '<b>'+element.text+'</b>'+ ':' + '<b>'+ element.values+'</b>'+ inht + inht1 +'</span>'
     todos.appendChild(l)
 
-      //Array.from(l.getElementsByClassName('bt1') ).map( v=>{ 
-      // v.value="E"; v.onclick= "update_data(v)" ;   }  )
-
-      //  Array.from(l.getElementsByClassName('bt2') ).map( v=>{ 
-      //  v.value="X" ; v.onclick=delete_data(v)  } )
-     
     } )
 
   }
-
-
-
-
-
-  //Mistake:- // var v=l.getElementsByClassName('bt1')[0].onclick=delete_data  => its a collection so foreach doesnt work so use [i] or array.from or [...]
